@@ -1,0 +1,127 @@
+body{
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+}
+
+.form-container{
+    background:linear-gradient(135deg, #2583FF, #0f9ae0);
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s ease infinite;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes gradientAnimation {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+/* Form styles */
+.form-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.form-group input{
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 7px;
+    border:none;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.867);
+}
+
+.form-group input:focus{
+    outline: none;
+    background-color: white;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+.forgot-password {
+    text-align: right;
+    margin-top: 8px;
+}
+
+.forgot-password {
+    color:rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+}
+
+.forgot-password a:hover{
+    color: white;
+}
+
+.btn{
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border-radius: 7px;
+    font-size:16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.btn:active{
+    transform: scale(0.98);
+}
+
+.btn-primary{
+    
+    background-color: white;
+    color: #2563eb
+}
+
+.btn-secondary {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.btn-secondary:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.form-footer {
+    margin-top: 20px;
+}
+
+/* Error message styling */
+/* .error-message {
+    color: #ffcccc;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.error {
+    border-color: #ffcccc !important;
+} */
